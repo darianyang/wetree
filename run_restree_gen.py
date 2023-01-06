@@ -8,11 +8,10 @@ import networkx as nx
 import sys
 
 from wepy.hdf5 import WepyHDF5
-from wepy.boundary_conditions.unbinding import UnbindingBC
 from wepy.analysis import parents
 from restree.propagation import generate_node_positions
 from restree.parent_tree import ParentForest
-from wepy.analysis.parents import resampling_panel, parent_panel, net_parent_table, parent_table_discontinuities, sliding_window
+from wepy.analysis.parents import resampling_panel, parent_panel
 from wepy.resampling.decisions.clone_merge import MultiCloneMergeDecision
 
 # args - hdf5 name and output gexf filename
